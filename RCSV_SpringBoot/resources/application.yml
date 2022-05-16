@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://112.74.97.101:3306/RCSVisualizer
+    username: admin
+    password: chen107101
+  redis:
+    database: 0
+    host: 192.168.75.132
+    password:
+    port: 6379
+server:
+  port: 8081

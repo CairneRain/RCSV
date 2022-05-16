@@ -1,0 +1,127 @@
+  #window{
+    font-family:"Microsoft YaHei";
+    display: flex;
+    justify-content: center;/*水平居中*/
+    min-width: 1000px;
+    min-height: 500px;
+    height: 100%;
+    min-width: 1200px;
+  }
+  /* left side  */
+  #leftWindow{
+    float: center;
+    width: 70%;
+    height: 100%;
+  }
+  #topController{
+    height: 10%;
+  }
+  #rightTopController{
+    float: right;
+  }
+  #leftTopController{
+    float: left;
+  }
+  #code {
+    text-align:left;
+    height: 70%;
+  }
+  .CodeMirror {
+    height: 100% !important;
+  }
+  #bottomController{
+    display:flex;
+    align-items: center;/*垂直居中*/
+    justify-content: center;/*水平居中*/
+    flex-direction: column;
+    height: 20%;
+  }
+  .legend{
+    float: left;
+  }
+  #slider{
+    margin: 0 auto;
+    width: 80%;
+  }
+  /* right side */
+  #rightWindow{
+    width: 50%;
+    height: 100%;
+  }
+  #stepInfo{
+    height: 10%;
+  }
+  #stackInfo{
+    display:flex;
+    align-items: flex-start;/*垂直居中*/
+    justify-content: center;/*水平居中*/
+    flex-direction: row;
+    height: 90%;
+  }
+  #callStackInfo{
+    width: 50%;
+    height: 95%;
+    border-style: solid;
+    border-right: 0px;
+    border-width: 5px;
+    /* background-color: yellowgreen; */
+  }
+  #variableInfo{
+    width: 50%;
+    height: 95%;
+    border-style: solid;
+    border-width: 5px;
+    /* background-color: aqua; */
+  } 
+  .variable-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 25px; 
+  }
+  .variable-item{
+    text-align: center;
+    animation: headShake;
+    animation-duration: 800ms; /* don't forget to set a duration! */
+  }
+  .field-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+  }
+  .field-item{
+    text-align: center;
+    animation: headShake;
+    animation-duration: 800ms; /* don't forget to set a duration! */
+  }
+  .Loading {
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 800ms; /* don't forget to set a duration! */
+  }
+  .line-error {
+    background: #FBC2C4 !important;
+    color: #8a1f11 !important;
+  }
+  .breakpoints {
+    width: .8em;
+    font-weight:bold;
+  }
+  .breakpoint {
+    color: #8a1f11; 
+  }
+  .CodeMirror-red-background{
+    background: #8a1f11;
+  }
+  .CodeMirror-blue-background{
+    background: #4239e8;
+    opacity: 40%;
+  }
+  .autocomplete-name {
+    display: inline-block;
+  }
+  .autocomplete-hint {
+    float: right;
+    color: #0088ff;
+    margin-left: 1em;
+  }
